@@ -1,99 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			.game {
-				height: 80vh;
-				width: 80vw;
-				object-position: 15vw 30px;
-			}
-			/* Navbar container */
-			.navbar {
-			overflow: hidden;
-			background-color: #333;
-			font-family: Arial;
-			}
-
-			/* Links inside the navbar */
-			.navbar a {
-			float: left;
-			font-size: 16px;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			}
-
-			/* The dropdown container */
-			.dropdown {
-			float: left;
-			overflow: hidden;
-			}
-
-			/* Dropdown button */
-			.dropdown .dropbtn {
-			font-size: 16px;
-			border: none;
-			outline: none;
-			color: white;
-			padding: 14px 16px;
-			background-color: inherit;
-			font-family: inherit; /* Important for vertical align on mobile phones */
-			margin: 0; /* Important for vertical align on mobile phones */
-			}
-
-			/* Add a red background color to navbar links on hover */
-			.navbar a:hover, .dropdown:hover .dropbtn {
-			background-color: red;
-			}
-
-			/* Dropdown content (hidden by default) */
-			.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: #f9f9f9;
-			min-width: 160px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			z-index: 1;
-			}
-
-			/* Links inside the dropdown */
-			.dropdown-content a {
-			float: none;
-			color: black;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-			text-align: left;
-			}
-
-			/* Add a grey background color to dropdown links on hover */
-			.dropdown-content a:hover {
-			background-color: #ddd;
-			}
-
-			/* Show the dropdown menu on hover */
-			.dropdown:hover .dropdown-content {
-			display: block;
-			} 
-		</style>
-		<title>Page Title</title>
+		<link href="./styleSheet.css" rel="stylesheet">
+		
+		<title>Tim The Trashman</title>
 	</head>
 	<body>
 		<div class="navbar">
 			<a href="index.html">Home</a>
-			<a href="tutorial.html">tutorial</a>
+			<a href="game.html">Game</a>
 			<div class="dropdown">
 			  <button class="dropbtn">More
 				<i class="fa fa-caret-down"></i>
 			  </button>
 			  <div class="dropdown-content">
-				<a href="#">about</a>
-				<a href="#">youtube</a>
-				<a href="#">Link 3</a>
+				<a href="tutorial.html">Tutorial</a>
+				<a href="https://www.youtube.com/watch?v=Pe22zpt-moc&feature=youtu.be">Youtube</a>
 			  </div>
 			</div>
 		  </div>
-          <iframe src="https://flowlab.io/game/embed/2161252" frameborder="0" allowfullscreen class="game"></iframe>
+		  <h1 class="docTitle">Tim The Trashman the game</h1>
+
+		  
+		  <div class="container">
+			<div class="child"><iframe src="https://youtu.be/Pe22zpt-moc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="game"></iframe></iframe></div>
+			<div class="child2">
+				<div class="head"><h2>The game Tim The Trashman</h2></div>
+				<p id="gameTxt">
+					This is the game Tim The Trashman. 
+					You can play this game as the hero Tim, who saves the world every day as a trash collector. However, the trash is now done with Tim capturing them
+					all the time and has now rebelled. Combining all their power the trash gang managed to lock up Tim in an inescapable prison consisting of four levels.
+					Now Tim needs your help to escape this prison. Your goal is to clean the world, escape all four levels and overcome anything that might try to stop you.
+					
+				</p>
+			</div>
+		  </div>
+		<div class="ContainGame">
+
+			<div class="ChildGame2">
+				<h2 id="Gametxt2">The game</h2>
+				<p id="Gametxt2">Here you can play the game Tim the Trashman. If this does not work either go to the 'game' page or go to the flowlab website.</p>
+			</div>
+
+			<a href="game.html">
+			<div class="ChildGame"><iframe width="640px" height="670" src="https://flowlab.io/game/embed/2161030" frameborder="0" allowfullscreen></iframe></div>
+			</a>
+
+		</div>
 	</body>
 </html>
